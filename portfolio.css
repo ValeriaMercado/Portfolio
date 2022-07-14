@@ -1,0 +1,705 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Luckiest Guy", cursive;
+}
+
+html,
+body {
+  background-color: #ffd9c0;
+  margin: 0;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+/*comienzo header*/
+header {
+  background-color: #f4bfbf;
+  min-height: 70px;
+  padding: 25px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: -1px 8px 15px -7px #000000;
+}
+
+header .menu a {
+  color: black;
+  text-decoration: none;
+  justify-content: center;
+  font-size: 15px;
+  margin-right: 15px;
+}
+
+header .menu button {
+  background-color: #e97f7f;
+  border-radius: 10px;
+  width: 90px;
+  height: 30px;
+  border-style: none;
+  text-align: center;
+  padding-left: 10px;
+}
+
+.mostrar-menu,
+.esconder-menu {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  transition: 0.4s;
+}
+
+.mostrar-menu {
+  order: 1;
+}
+
+.menu a:hover,
+button:hover,
+.mostrar-menu,
+.esconder-menu:hover {
+  color: rgb(2, 94, 124);
+}
+
+#check {
+  display: none;
+}
+
+/*fin header*/ 
+
+/*comienzo hero*/
+#hero {
+  margin-top: 150px;
+  padding: 0 50px;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+}
+
+#hero .hola h1 {
+  font-size: 40px;
+  margin-top: 100px;
+  width: 700px;
+  text-align: center;
+}
+
+#hero .hola span {
+  font-size: 40px;
+  color: #156de0;
+  margin-bottom: 20px;
+}
+
+#hero .descripcion {
+  font-size: 20px;
+  color: rgb(0, 107, 194);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#hero .boton1 {
+  display: flex;
+  justify-content: center;
+}
+
+#hero .boton1 a {
+  display: flex;
+  justify-content: center;
+  color: black;
+  text-decoration: none;
+  background-color: #001df8;
+  width: 150px;
+  border-radius: 30px;
+  border: 10px solid #001df8;
+}
+
+#hero .fotopersonal img {
+  height: 380px;
+  width: 370px;
+  margin-left: 90px;
+  padding-bottom: 40px;
+}
+
+#hero .textodescripcion {
+  display: flex;
+  flex-direction: column;
+}
+/*fin hero */
+
+/*comienzo grilla de conocimientos*/
+#grillaconocimientos {
+  background-color: #faf0d7;
+  width: 100%;
+  height: 800px;
+  padding: 20px 150px;
+}
+
+#grillaconocimientos .conocimientos h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#grillaconocimientos .conocimientos p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+}
+
+#grillaconocimientos .grilla {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 20px 80px;
+}
+
+#grillaconocimientos .grilla span {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  text-align: center;
+  justify-content: center;
+  color: black;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#grillaconocimientos .grilla .html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  color: orangered;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px 40px;
+  border-radius: 2px;
+  border: 1px solid rgb(187, 184, 184);
+  background-color: white;
+  border-radius: 5px;
+}
+
+#grillaconocimientos .grilla .html:hover {
+  border: 1px solid #424874;
+}
+
+#grillaconocimientos .grilla .css3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  margin: 20px 40px;
+  border: 1px solid rgb(187, 184, 184);
+  background-color: white;
+  border-radius: 5px;
+}
+
+#grillaconocimientos .grilla .css3:hover {
+  border: 1px solid #424874;
+}
+
+#grillaconocimientos .grilla .sass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  margin: 20px 40px;
+  border: 1px solid rgb(187, 184, 184);
+  background-color: white;
+  border-radius: 5px;
+}
+
+#grillaconocimientos .grilla .sass:hover {
+  border: 1px solid #424874;
+}
+
+#grillaconocimientos .grilla .java {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  margin: 20px 40px;
+  border: 1px solid rgb(187, 184, 184);
+  background-color: white;
+  border-radius: 5px;
+}
+
+#grillaconocimientos .grilla .java:hover {
+  border: 1px solid #424874;
+}
+
+#grillaconocimientos .grilla .react {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  margin: 20px 40px;
+  border: 1px solid rgb(187, 184, 184);
+  background-color: white;
+  border-radius: 5px;
+}
+
+#grillaconocimientos .grilla .react:hover {
+  border: 1px solid #424874;
+}
+
+#grillaconocimientos .grilla .git {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  margin: 20px 40px;
+  border: 1px solid rgb(187, 184, 184);
+  background-color: white;
+  border-radius: 5px;
+}
+
+#grillaconocimientos .grilla .git:hover {
+  border: 1px solid #424874;
+}
+/*fin grilla de conocimientos*/
+
+/*comienzo cita*/
+.cita {
+  width: 100%;
+  height: 300px;
+  margin: 50px 0px;
+  padding: 0 50px;
+}
+
+.cita .comilla h1 {
+  text-align: center;
+  color: white;
+  font-size: 100px;
+}
+
+.cita .cita1 p {
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
+  font-style: italic;
+}
+
+.cita .cita1 a {
+  text-decoration: none;
+  color: black;
+}
+
+.cita .autor h1 {
+  text-align: center;
+  font-size: 15px;
+}
+/*fin cita */
+
+/*comienzo proyectos*/
+#misproyectos {
+  background-color: #faf0d7;
+  height: 1200px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+#misproyectos h1 {
+  margin: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#misproyectos p {
+  font-size: 20px;
+  text-align: center;
+}
+
+#misproyectos .grillaproyectos {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 100px;
+}
+
+#misproyectos .grillaproyectos .proyectos-iconos {
+  border: 1px solid #f4bfbf;
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  margin: 20px 20px;
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+#misproyectos .grillaproyectos .proyectos-iconos:hover {
+  border: 1px solid #f7a7a7;
+}
+
+#misproyectos .grillaproyectos .proyectos-iconos img {
+  width: 250px;
+  height: 250px;
+  align-items: center;
+}
+
+#misproyectos .grillaproyectos .proyectos-iconos span {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+/*fin proyectos*/
+
+/*comienzo contacto*/
+#contacto {
+  background-color: #8cc0de;
+  width: 80%;
+  height: 600px;
+  margin: 20px 150px;
+  border: 1px solid rgb(185, 185, 185);
+  border-radius: 10px;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+#contacto .contactame {
+  height: 200px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+}
+
+#contacto .contactame h1 {
+  font-size: 30px;
+}
+
+#contacto .redes {
+  margin: 10px 0px;
+}
+
+#contacto .contactame i {
+  display: block;
+  height: 2.2rem;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+#contacto .contactame a {
+  text-decoration: none;
+  margin-left: 10px;
+  color: rgb(0, 120, 160);
+}
+
+#formulario {
+  margin-left: 50px;
+}
+
+#formulario h1 {
+  font-size: 30px;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+#formulario .nombre {
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+}
+
+#formulario .nombre p {
+  margin-right: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#formulario .contacto2 p {
+  margin: 10px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+::placeholder {
+  font-family: monospace;
+  padding: 5px;
+}
+
+input {
+  background-color: rgb(233, 227, 227);
+  border-style: none;
+  border-radius: 10px;
+  height: 25px;
+  width: 180px;
+}
+
+#formulario button {
+  background-color: rgb(10, 159, 209);
+  width: 70px;
+  height: 40px;
+  border-style: none;
+  border-radius: 10px;
+}
+
+#formulario button:hover {
+  background-color: rgb(167, 199, 247);
+}
+
+#formulario button a {
+  text-decoration: none;
+  color: white;
+}
+/*fin contacto*/
+
+/*comienzo footer*/
+#footer {
+  background-color: #f4bfbf;
+  height: 300px;
+  padding: 30px;
+}
+
+#footer .footer1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px 200px;
+}
+
+#footer .footer1 a {
+  color: black;
+  text-decoration: none;
+  justify-content: center;
+  font-size: 15px;
+  margin-right: 15px;
+}
+
+#footer .redessociales {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer .redessociales a {
+  background-color: white;
+  font-size: 40px;
+  margin: 0px 10px;
+  width: 50px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+}
+
+#footer .redessociales i {
+  color: lightblue;
+}
+
+#footer a:hover {
+  background-color: transparent;
+}
+
+#footer .autora {
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 0;
+}
+/*fin footer*/
+
+
+@media (min-width: 320px) and (max-width: 760px){ 
+  body {
+    width: 100%;
+  }
+
+  .mostrar-menu,
+  .esconder-menu {
+    display: block;
+  }
+
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #f4bfbf;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    align-items: center;
+    padding: 100px 0px;
+    z-index: 100;
+    transition: 0.8s;
+  }
+
+  .menu a {
+    display: block;
+    padding: 20px;
+  }
+
+  .esconder-menu {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+
+  #check:checked~.menu {
+    right: 0;
+  }
+
+  #hero {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    margin-top: 10px;
+  }
+
+  #hero .hola{ 
+    display: flex;
+   
+    margin-bottom: 20px;
+  }
+
+  #hero .fotopersonal img{
+    display: flex;
+    height: 280px;
+    width: 270px;
+    margin: 0 auto;
+  }
+   
+  #grillaconocimientos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #grillaconocimientos .conocimientos p{
+    width:45vh;
+  }
+
+  #grillaconocimientos .grilla{
+    width: 90vh;
+  }
+
+  #grillaconocimientos .grilla .html, 
+  #grillaconocimientos .grilla .css3, 
+  #grillaconocimientos .grilla .sass,
+  #grillaconocimientos .grilla .java,
+  #grillaconocimientos .grilla .react,
+  #grillaconocimientos .grilla .git{
+    width: 100px;
+    height: 100px;
+    margin: 10px 20px;
+  }
+
+  #grillaconocimientos .grilla i{
+    font-size: 50px;
+    text-align: center;
+  }
+
+  #misproyectos {
+    height: 100%;
+  }
+
+  #misproyectos .grillaproyectos .proyectos-iconos span {
+    font-size: 15px;
+  }
+
+
+#contacto{
+  width: 100vh;
+  height: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#contacto .contactame{
+  margin-bottom: 180px;
+  
+}
+
+#formulario .nombre{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+#formulario .contacto2{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: 10px 0px;
+}
+ }
+
+ @media (min-width:761px) and (max-width: 1200px){
+  body {
+    width: 100%;
+  }
+  #hero {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    margin-top: 10px;
+  }
+  #hero .fotopersonal img{
+    display: flex;
+    height: 380px;
+    width: 370px;
+    margin: 0 auto;
+  }
+
+  #grillaconocimientos .grilla .html, 
+  #grillaconocimientos .grilla .css3, 
+  #grillaconocimientos .grilla .sass,
+  #grillaconocimientos .grilla .java,
+  #grillaconocimientos .grilla .react,
+  #grillaconocimientos .grilla .git{
+    width: 100px;
+    height: 100px;
+  }
+  #misproyectos {
+    height: 100%;
+  }
+
+  #contacto{
+    width: 100vh;
+    height: 600px;
+    margin: 0 auto;
+   
+  }
+  
+  #formulario .nombre{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  
+  #formulario .contacto2{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 10px 0px;
+  }
+
+ }
+  
