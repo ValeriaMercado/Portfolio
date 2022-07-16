@@ -42,30 +42,21 @@ header .menu button {
   padding-left: 10px;
 }
 
-.mostrar-menu,
-.esconder-menu {
-  font-size: 30px;
-  cursor: pointer;
-  display: none;
-  transition: 0.4s;
+header .menu a:hover {
+  color: #156de0;
 }
 
-.mostrar-menu {
-  order: 1;
+header .menu a:hover:last-child {
+  color: black
 }
 
-.menu a:hover,
-button:hover,
-.mostrar-menu,
-.esconder-menu:hover {
-  color: rgb(2, 94, 124);
+header .menu button:hover {
+  background-color: rgb(247, 139, 157);
 }
 
-#check {
-  display: none;
-}
 
-/*fin header*/ 
+
+/*fin header*/
 
 /*comienzo hero*/
 #hero {
@@ -73,7 +64,7 @@ button:hover,
   padding: 0 50px;
   display: flex;
   justify-content: center;
-  height: 500px;
+  height: 600px;
 }
 
 #hero .hola h1 {
@@ -123,6 +114,7 @@ button:hover,
   display: flex;
   flex-direction: column;
 }
+
 /*fin hero */
 
 /*comienzo grilla de conocimientos*/
@@ -279,6 +271,7 @@ button:hover,
 #grillaconocimientos .grilla .git:hover {
   border: 1px solid #424874;
 }
+
 /*fin grilla de conocimientos*/
 
 /*comienzo cita*/
@@ -311,6 +304,7 @@ button:hover,
   text-align: center;
   font-size: 15px;
 }
+
 /*fin cita */
 
 /*comienzo proyectos*/
@@ -342,17 +336,6 @@ button:hover,
   padding: 0px 100px;
 }
 
-#misproyectos .grillaproyectos .proyectos-iconos {
-  border: 1px solid #f4bfbf;
-  border-radius: 10px;
-  width: 300px;
-  height: 300px;
-  margin: 20px 20px;
-  padding: 10px 20px;
-  align-items: center;
-  justify-content: center;
-}
-
 #misproyectos .grillaproyectos .proyectos-iconos:hover {
   border: 1px solid #f7a7a7;
 }
@@ -369,6 +352,7 @@ button:hover,
   justify-content: center;
   text-align: center;
 }
+
 /*fin proyectos*/
 
 /*comienzo contacto*/
@@ -453,7 +437,11 @@ input {
   width: 180px;
 }
 
-#formulario button {
+input .boton {
+  background: #156de0;
+}
+
+#formulario .boton {
   background-color: rgb(10, 159, 209);
   width: 70px;
   height: 40px;
@@ -461,14 +449,15 @@ input {
   border-radius: 10px;
 }
 
-#formulario button:hover {
+#formulario .boton:hover {
   background-color: rgb(167, 199, 247);
 }
 
-#formulario button a {
+#formulario .boton a {
   text-decoration: none;
   color: white;
 }
+
 /*fin contacto*/
 
 /*comienzo footer*/
@@ -512,6 +501,7 @@ input {
 
 #footer .redessociales i {
   color: lightblue;
+  font-size: 35px;
 }
 
 #footer a:hover {
@@ -523,46 +513,25 @@ input {
   margin-top: 90px;
   margin-bottom: 0;
 }
+
 /*fin footer*/
 
 
-@media (min-width: 320px) and (max-width: 760px){ 
+@media (min-width: 320px) and (max-width: 760px) {
   body {
     width: 100%;
   }
 
-  .mostrar-menu,
-  .esconder-menu {
-    display: block;
-  }
-
-  .menu {
-    position: fixed;
+  header {
     width: 100%;
-    height: 100vh;
-    background-color: #f4bfbf;
-    right: -100%;
+    height: 20px;
     top: 0;
+    display: flex;
     text-align: center;
     align-items: center;
-    padding: 100px 0px;
-    z-index: 100;
-    transition: 0.8s;
-  }
-
-  .menu a {
-    display: block;
-    padding: 20px;
-  }
-
-  .esconder-menu {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-  }
-
-  #check:checked~.menu {
-    right: 0;
+    padding: 20px 0px;
+    position: fixed;
+    justify-content: center;
   }
 
   #hero {
@@ -572,45 +541,45 @@ input {
     margin-top: 10px;
   }
 
-  #hero .hola{ 
+  #hero .hola {
     display: flex;
-   
     margin-bottom: 20px;
   }
 
-  #hero .fotopersonal img{
+  #hero .fotopersonal img {
     display: flex;
     height: 280px;
     width: 270px;
     margin: 0 auto;
   }
-   
-  #grillaconocimientos{
+
+  #grillaconocimientos {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  #grillaconocimientos .conocimientos p{
-    width:45vh;
+
+  #grillaconocimientos .conocimientos p {
+    width: 35vh;
   }
 
-  #grillaconocimientos .grilla{
-    width: 90vh;
+  #grillaconocimientos .grilla {
+    width: 70vh;
   }
 
-  #grillaconocimientos .grilla .html, 
-  #grillaconocimientos .grilla .css3, 
+  #grillaconocimientos .grilla .html,
+  #grillaconocimientos .grilla .css3,
   #grillaconocimientos .grilla .sass,
   #grillaconocimientos .grilla .java,
   #grillaconocimientos .grilla .react,
-  #grillaconocimientos .grilla .git{
+  #grillaconocimientos .grilla .git {
     width: 100px;
     height: 100px;
     margin: 10px 20px;
   }
 
-  #grillaconocimientos .grilla i{
+  #grillaconocimientos .grilla i {
     font-size: 50px;
     text-align: center;
   }
@@ -623,8 +592,183 @@ input {
     font-size: 15px;
   }
 
+  #contacto {
+    width: 100vh;
+    height: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
 
-#contacto{
+  #contacto .contactame {
+    margin-bottom: 180px;
+
+  }
+
+  #formulario .nombre {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  #formulario .contacto2 {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 10px 0px;
+  }
+}
+
+@media (min-width:761px) and (max-width: 1200px) {
+  body {
+    width: 100%;
+  }
+
+  #hero {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    margin-top: 10px;
+  }
+
+  #hero .fotopersonal img {
+    display: flex;
+    height: 380px;
+    width: 370px;
+    margin: 0 auto;
+  }
+
+  #grillaconocimientos .grilla .html,
+  #grillaconocimientos .grilla .css3,
+  #grillaconocimientos .grilla .sass,
+  #grillaconocimientos .grilla .java,
+  #grillaconocimientos .grilla .react,
+  #grillaconocimientos .grilla .git {
+    width: 100px;
+    height: 100px;
+  }
+
+  #misproyectos {
+    height: 100%;
+  }
+
+  #contacto {
+    width: 100vh;
+    height: 600px;
+    margin: 0 auto;
+
+  }
+
+  #formulario .nombre {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  #formulario .contacto2 {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 10px 0px;
+  }
+
+}
+
+@media (max-width:280px) {
+  body {
+    width: 100%;
+  }
+
+  header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 100px;
+  }
+
+  header .menu a {
+    display: block;
+  }
+
+  #hero {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #hero .hola {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  #hero .fotopersonal img {
+    height: 280px;
+    width: 270px;
+    margin: 0 auto;
+  }
+
+  #grillaconocimientos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+
+  }
+
+  #grillaconocimientos .conocimientos p{
+    font-size:15px;
+  }
+
+  
+  #grillaconocimientos .grilla .html,
+  #grillaconocimientos .grilla .css3,
+  #grillaconocimientos .grilla .sass,
+  #grillaconocimientos .grilla .java,
+  #grillaconocimientos .grilla .react,
+  #grillaconocimientos .grilla .git {
+    width: 90px;
+    height: 90px;
+    margin: 10px;
+  }
+
+  #grillaconocimientos .grilla i {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  #grillaconocimientos .grilla {
+    width: 60vh;
+  }
+
+  #misproyectos .grillaproyectos .proyectos-iconos span {
+    font-size: 15px;
+
+} 
+
+#misproyectos {
+  height: 100%;
+}
+
+#misproyectos .grillaproyectos .proyectos-iconos {
+  border: 1px solid #f4bfbf;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  margin: 20px 20px;
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: center;
+} 
+
+#misproyectos .grillaproyectos .proyectos-iconos img {
+  width: 150px;
+  height: 150px;
+  align-items: center
+} 
+
+#contacto {
   width: 100vh;
   height: 1000px;
   margin: 0 auto;
@@ -633,73 +777,49 @@ input {
 }
 
 #contacto .contactame{
-  margin-bottom: 180px;
-  
+  width: 33%;
 }
 
-#formulario .nombre{
+#formulario{ 
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 150px;
+  align-items: center;
+}
+
+#formulario h1{
+  margin-right: 250px;
+}
+
+#formulario .nombre, 
+#formulario .contacto2{
+  display: block;
+  width: 80vh;
+}
+
+#footer{
+  height: 100%;
+}
+
+#footer .footer1 {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
 }
 
-#formulario .contacto2{
-  display: flex;
-  flex-direction: column;
-  width: 250px;
-  margin: 10px 0px;
+#footer .redessociales a {
+  font-size: 20px;
+  margin-top: 20px;
 }
- }
 
- @media (min-width:761px) and (max-width: 1200px){
-  body {
-    width: 100%;
-  }
-  #hero {
-    display: flex;
-    flex-direction: column;
-    height: 800px;
-    margin-top: 10px;
-  }
-  #hero .fotopersonal img{
-    display: flex;
-    height: 380px;
-    width: 370px;
-    margin: 0 auto;
-  }
-
-  #grillaconocimientos .grilla .html, 
-  #grillaconocimientos .grilla .css3, 
-  #grillaconocimientos .grilla .sass,
-  #grillaconocimientos .grilla .java,
-  #grillaconocimientos .grilla .react,
-  #grillaconocimientos .grilla .git{
-    width: 100px;
-    height: 100px;
-  }
-  #misproyectos {
-    height: 100%;
-  }
-
-  #contacto{
-    width: 100vh;
-    height: 600px;
-    margin: 0 auto;
-   
-  }
+#footer .redessociales i{
+  font-size: 20px;
   
-  #formulario .nombre{
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-  }
-  
-  #formulario .contacto2{
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    margin: 10px 0px;
-  }
+}
 
- }
-  
+}
+
+
+
+
