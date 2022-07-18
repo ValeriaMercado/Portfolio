@@ -47,14 +47,12 @@ header .menu a:hover {
 }
 
 header .menu a:hover:last-child {
-  color: black
+  color: black;
 }
 
 header .menu button:hover {
   background-color: rgb(247, 139, 157);
 }
-
-
 
 /*fin header*/
 
@@ -310,7 +308,7 @@ header .menu button:hover {
 /*comienzo proyectos*/
 #misproyectos {
   background-color: #faf0d7;
-  height: 1200px;
+  height: 1000px;
   padding: 20px;
   align-items: center;
   justify-content: center;
@@ -328,7 +326,7 @@ header .menu button:hover {
 }
 
 #misproyectos .grillaproyectos {
-  margin: 20px;
+  margin: 10px 30px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -336,8 +334,9 @@ header .menu button:hover {
   padding: 0px 100px;
 }
 
-#misproyectos .grillaproyectos .proyectos-iconos:hover {
-  border: 1px solid #f7a7a7;
+#misproyectos .grillaproyectos .proyectos-iconos {
+  border: 1px solid #f1a9e5;
+  margin: 5px 15px;
 }
 
 #misproyectos .grillaproyectos .proyectos-iconos img {
@@ -352,6 +351,7 @@ header .menu button:hover {
   justify-content: center;
   text-align: center;
 }
+
 
 /*fin proyectos*/
 
@@ -516,22 +516,16 @@ input .boton {
 
 /*fin footer*/
 
-
-@media (min-width: 320px) and (max-width: 760px) {
+@media (max-width: 480px) {
   body {
     width: 100%;
   }
 
   header {
     width: 100%;
-    height: 20px;
-    top: 0;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    padding: 20px 0px;
+    padding: 20px 22px;
     position: fixed;
-    justify-content: center;
+    top: 0;
   }
 
   #hero {
@@ -602,7 +596,6 @@ input .boton {
 
   #contacto .contactame {
     margin-bottom: 180px;
-
   }
 
   #formulario .nombre {
@@ -619,207 +612,106 @@ input .boton {
   }
 }
 
-@media (min-width:761px) and (max-width: 1200px) {
-  body {
-    width: 100%;
-  }
-
-  #hero {
-    display: flex;
-    flex-direction: column;
-    height: 800px;
-    margin-top: 10px;
-  }
-
-  #hero .fotopersonal img {
-    display: flex;
-    height: 380px;
-    width: 370px;
-    margin: 0 auto;
-  }
-
-  #grillaconocimientos .grilla .html,
-  #grillaconocimientos .grilla .css3,
-  #grillaconocimientos .grilla .sass,
-  #grillaconocimientos .grilla .java,
-  #grillaconocimientos .grilla .react,
-  #grillaconocimientos .grilla .git {
-    width: 100px;
-    height: 100px;
-  }
-
-  #misproyectos {
-    height: 100%;
-  }
-
-  #contacto {
-    width: 100vh;
-    height: 600px;
-    margin: 0 auto;
-
-  }
-
-  #formulario .nombre {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-  }
-
-  #formulario .contacto2 {
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    margin: 10px 0px;
-  }
-
-}
-
-@media (max-width:280px) {
-  body {
-    width: 100%;
-  }
-
-  header {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    height: 100px;
-  }
-
-  header .menu a {
-    display: block;
-  }
-
-  #hero {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  #hero .hola {
-    display: flex;
-    margin-bottom: 20px;
-  }
-
-  #hero .fotopersonal img {
-    height: 280px;
-    width: 270px;
-    margin: 0 auto;
-  }
-
-  #grillaconocimientos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center
-
-  }
-
-  #grillaconocimientos .conocimientos p{
-    font-size:15px;
-  }
-
+  @media (min-width:481px) and (max-width:960px){
+    body {
+      width: 100%;
+    }
   
-  #grillaconocimientos .grilla .html,
-  #grillaconocimientos .grilla .css3,
-  #grillaconocimientos .grilla .sass,
-  #grillaconocimientos .grilla .java,
-  #grillaconocimientos .grilla .react,
-  #grillaconocimientos .grilla .git {
-    width: 90px;
-    height: 90px;
-    margin: 10px;
-  }
-
-  #grillaconocimientos .grilla i {
-    font-size: 25px;
-    text-align: center;
-  }
-
-  #grillaconocimientos .grilla {
-    width: 60vh;
-  }
-
-  #misproyectos .grillaproyectos .proyectos-iconos span {
-    font-size: 15px;
-
-} 
-
-#misproyectos {
-  height: 100%;
-}
-
-#misproyectos .grillaproyectos .proyectos-iconos {
-  border: 1px solid #f4bfbf;
-  border-radius: 10px;
-  width: 200px;
-  height: 200px;
-  margin: 20px 20px;
-  padding: 10px 20px;
-  align-items: center;
-  justify-content: center;
-} 
-
-#misproyectos .grillaproyectos .proyectos-iconos img {
-  width: 150px;
-  height: 150px;
-  align-items: center
-} 
-
-#contacto {
-  width: 100vh;
-  height: 1000px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
-
-#contacto .contactame{
-  width: 33%;
-}
-
-#formulario{ 
-  margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-  margin-right: 150px;
-  align-items: center;
-}
-
-#formulario h1{
-  margin-right: 250px;
-}
-
-#formulario .nombre, 
-#formulario .contacto2{
-  display: block;
-  width: 80vh;
-}
-
-#footer{
-  height: 100%;
-}
-
-#footer .footer1 {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-}
-
-#footer .redessociales a {
-  font-size: 20px;
-  margin-top: 20px;
-}
-
-#footer .redessociales i{
-  font-size: 20px;
+    header {
+      width: 100%;
+      padding: 20px 22px;
+      position: fixed;
+      top: 0;
+    }
   
-}
+    #hero {
+      display: flex;
+      flex-direction: column;
+      height: 1000px;
+      width: 90%;
+      margin-top: 10px;
+      align-items: center;
+      padding: 20px;
+    }
 
-}
+    #hero .textodescripcion{
+      width:70%;
+      margin:0 auto;
+    }
 
+    #hero .textodescripcion .hola{
+      display: flex;
+      margin-bottom: 20px;
+    }
 
-
+    #hero .fotopersonal img {
+      display: flex;
+      height: 380px;
+      width: 370px;
+      margin: 0 auto;
+    }
+  
+    #grillaconocimientos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    #grillaconocimientos .conocimientos p {
+      width: 35vh;
+    }
+  
+    #grillaconocimientos .grilla {
+      width: 70vh;
+    }
+  
+    #grillaconocimientos .grilla .html,
+    #grillaconocimientos .grilla .css3,
+    #grillaconocimientos .grilla .sass,
+    #grillaconocimientos .grilla .java,
+    #grillaconocimientos .grilla .react,
+    #grillaconocimientos .grilla .git {
+      width: 120px;
+      height: 120px;
+      margin: 10px 20px;
+    }
+  
+    #grillaconocimientos .grilla i {
+      font-size: 50px;
+      text-align: center;
+    }
+  
+    #misproyectos {
+      height: 100%;
+    }
+  
+    #misproyectos .grillaproyectos .proyectos-iconos span {
+      font-size: 15px;
+    }
+  
+    #contacto {
+      width: 100%;
+      height: 600px;
+      margin: 0 auto;
+      padding: 10px;
+    }
+  
+    #contacto .contactame {
+      margin-bottom: 180px;
+    }
+    #formulario{ 
+      align-items: center;
+    }
+    
+    #formulario h1{
+      margin-right: 250px;
+    }
+    
+    #formulario .nombre, 
+    #formulario .contacto2{
+      display: block;
+      width: 80vh;
+    }
+  }
 
