@@ -288,10 +288,9 @@ header .menu button:hover {
 }
 
 .cita .cita1 p {
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
-  margin: 10px;
-  font-style: italic;
+  margin: 10px; 
 }
 
 .cita .cita1 a {
