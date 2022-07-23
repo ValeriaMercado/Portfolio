@@ -25,7 +25,7 @@
 
         <!--comienzo header-->
         <header>
-            <nav class="menu">
+            <nav class="menu" aria-label="Menú de navegación">
                 <a href="#hero">HOLA</a>
                 <a href="#grillaconocimientos">CONOCIMIENTOS</a>
                 <a href="#misproyectos">PROYECTOS</a>
@@ -38,13 +38,13 @@
         <section id="hero">
             <div class="textodescripcion">
                 <div class="hola">
-                    <h1>HOLA, SOY <span> VALERIA MERCADO</span></h1>
+                    <h1 aria-label="">HOLA, SOY <span aria-label=""> VALERIA MERCADO</span></h1>
                 </div>
                 <div class="descripcion">
-                    <h3>Docente de Nivel Inicial y futura Programadora Frontend 💻</h3>
+                    <h3 aria-label="">Docente de Nivel Inicial y futura Programadora Frontend 💻</h3>
                 </div>
                 <div class="boton1">
-                    <a href="#misproyectos">LO QUE HAGO</a>
+                    <a href="#misproyectos" aria-label="enlace a mis proyectos">LO QUE HAGO</a>
                 </div>
             </div>
             <div class="fotopersonal">
@@ -57,7 +57,7 @@
         <section id="grillaconocimientos">
             <div class="conocimientos">
                 <h1>MIS CONOCIMIENTOS</h1>
-                <p>Me encuentro realizado la Experiencia ADA junto a otras mujeres de Latinoamérica, cursando la carrera
+                <p>Me encuentro realizando la Experiencia ADA junto a otras mujeres de Latinoamérica, cursando la carrera
                     de
                     Desarrollo Frontend, dónde a lo
                     largo de 9 meses conoceremos los recursos necesarios para desenvolvernos como profesionales en el
@@ -65,7 +65,7 @@
                 </p>
             </div>
             <div id="grilla-1">
-                <div class="grilla">
+                <div class="grilla" aria-label="grilla con mis conocimientos">
                     <div class="html"><i class="devicon-html5-plain"><span>HTML5</span></i></div>
                     <div class="css3"><i class="devicon-css3-plain colored"><span>CSS 3</span></i></div>
                     <div class="sass"><i class="devicon-sass-original colored"><span>Sass</span></i></div>
@@ -105,18 +105,19 @@
             </div>
 
             <div class="grillaproyectos">
-                <div class="proyectos-iconos"><img src="imagenes/Sin título.png"><span>Portfolio</span></div>
-                <div class="proyectos-iconos"><img src="imagenes/meme.svg" alt="generador de memes"><span>Generador de
+                <div class="proyectos-iconos"><img src="imagenes/Sin título.png" aria-hidden="true"><span>Portfolio</span></div>
+                <div class="proyectos-iconos"><img src="imagenes/meme.svg" alt="generador de memes" aria-hidden="true"><span>Generador de
                         memes</span>
                 </div>
-                <div class="proyectos-iconos"><img src="imagenes/match.svg" alt="Match 3"><span>Match 3</span></div>
-                <div class="proyectos-iconos"><img src="imagenes/gastos.svg" alt="Controlador de gastos"><span>Controlador de
+                <div class="proyectos-iconos"><img src="imagenes/match.svg" alt="Match 3" aria-hidden="true"><span>Match 3</span></div>
+                <div class="proyectos-iconos"><img src="imagenes/gastos.svg"
+                        alt="Controlador de gastos" aria-hidden="true"><span>Controlador de
                         gastos</span></div>
                 <div class="proyectos-iconos"><img src="imagenes/reuniones.svg"
-                        alt="Administrador de reuniones"><span>Administrador
+                        alt="Administrador de reuniones" aria-hidden="true"><span>Administrador
                         de reuniones</span></div>
-                <div class="proyectos-iconos"><img src="imagenes/app.svg" alt="Todo app"><span>Todo app</span></div>
-                <div class="proyectos-iconos"><img src="imagenes/pelis.svg" alt="Buscador de pelis"><span>Buscador de
+                <div class="proyectos-iconos"><img src="imagenes/app.svg" alt="Todo app" aria-hidden="true"><span>Todo app</span></div>
+                <div class="proyectos-iconos"><img src="imagenes/pelis.svg" alt="Buscador de pelis" aria-hidden="true"><span>Buscador de
                         películas</span></div>
             </div>
         </section>
@@ -129,18 +130,18 @@
                 <p>Ante cualquier inquietud o consulta, podés contactarme a través de mis siguientes redes sociales:</p>
 
                 <div class="redes">
-                    <i class="fa-brands fa-twitter"><a href="https://twitter.com/Vale_mza93"
+                    <i class="fa-brands fa-twitter" aria-label="Twitter vale_mza93"><a href="https://twitter.com/Vale_mza93"
                             target="_blank">@Vale_mza93</a></i>
-                    <i class="fa-brands fa-github-alt"><a href="https://github.com/ValeriaMercado"
+                    <i class="fa-brands fa-github-alt" aria-label="Git Hub Valeria Mercado"><a href="https://github.com/ValeriaMercado"
                             target="_blank">ValeriaMercado</a></i>
-                    <i class="fa-brands fa-linkedin"><a href="https://www.linkedin.com/in/valeria-mercado-4b0940236/"
+                    <i class="fa-brands fa-linkedin" aria-label=" Linkedin Valeria Mercado"><a href="https://www.linkedin.com/in/valeria-mercado-4b0940236/"
                             target="_blank">Valeria Mercado</a></i>
-                    <i class="fa-solid fa-envelope"><a href="mailto:valeria.mza93@gmail.com" target="_blank">Vía
+                    <i class="fa-solid fa-envelope" aria-label="Email valeria.mza93@gmail.com"><a href="mailto:valeria.mza93@gmail.com" target="_blank">Vía
                             e-mail</a></i>
                 </div>
             </div>
             <div id="formulario">
-                <h1>ESCRIBIME</h1>
+                <h1 aria-label="Escribime a través del siguiente formulario">ESCRIBIME</h1>
                 <form action="#" method="GET">
                     <div class="nombre">
                         <p>Nombre*</p>
@@ -150,9 +151,11 @@
                     </div>
                     <div class="contacto2">
                         <p>Email*</p> <input type="email" name="email" placeholder="por ej: pepe@gmail.com" required>
-                        <p>Mensaje*</p><textarea cols="30" rows="10" placeholder="Escriba su mensaje aquí" required></textarea>
+                        <p>Mensaje*</p><textarea cols="30" rows="10" placeholder="Escriba su mensaje aquí"
+                            required></textarea>
                     </div>
-                        <input type="submit" name="Enviar" value="Enviar" class="boton" placeholder="Escriba su mensaje aquí">
+                    <input type="submit" name="Enviar" value="Enviar" class="boton"
+                        placeholder="Escriba su mensaje aquí">
                 </form>
             </div>
         </section>
@@ -167,14 +170,14 @@
                 <a href="#contacto" class="contacto">CONTACTO</a>
             </div>
 
-            <div class="redessociales">
-                <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://github.com/ValeriaMercado" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
+            <div class="redessociales" aria-label="Mis redes sociales">
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://github.com/ValeriaMercado" target="_blank" aria-label="Github"><i class="fa-brands fa-github-alt"></i></a>
                 <a href="https://www.linkedin.com/in/valeria-mercado-4b0940236/" target="_blank"><i
-                        class="fa-brands fa-linkedin"></i></a>
-                <a href="mailto:valeria.mza93@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                        class="fa-brands fa-linkedin" aria-label="Linkedin"></i></a>
+                <a href="mailto:valeria.mza93@gmail.com" aria-label="Via email"><i class="fa-solid fa-envelope"></i></a>
             </div>
-            <div class="autora">
+            <div class="autora" aria-label="Hecho con amor por Valeria Mercado">
                 Hecho con 💙 por Valeria Mercado
             </div>
         </section>
