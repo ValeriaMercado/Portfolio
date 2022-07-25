@@ -491,18 +491,18 @@ input .boton {
 
 #footer .redessociales a {
   background-color: white;
-  font-size: 40px;
+  font-size: 30px;
   margin: 0px 10px;
   width: 50px;
   border: 1px solid rgb(255, 255, 255);
-  border-radius: 60%;
+  border-radius: 100%;
   align-items: center;
   text-align: center;
 }
 
 #footer .redessociales i {
   color: lightblue;
-  font-size: 35px;
+  font-size: 25px;
 }
 
 #footer a:hover {
@@ -636,6 +636,8 @@ input .boton {
     font-size: 30px;
 }
 
+} 
+
 @media (min-width: 481px) and (max-width: 960px) {
   body {
     width: 100%;
@@ -739,3 +741,5 @@ input .boton {
     height: 900px;
   }
 }
+
+} 
