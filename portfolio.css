@@ -472,7 +472,7 @@ input .boton {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 40px 200px;
+  margin: 40px 180px;
 }
 
 #footer .footer1 a {
@@ -519,13 +519,14 @@ input .boton {
 
 @media (max-width: 375px){
   body{
-    width: 100%
+    width: 90%
   }
 
   header .menu{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    margin: 0 auto;
   }
 
 }
@@ -689,6 +690,12 @@ input .boton {
     text-align: center;
   }
 
+  #grilla-1{
+    width: 65vh;
+    display: flex;
+    flex-direction: row;
+  }
+
   #misproyectos {
     height: 100%;
   }
@@ -719,5 +726,12 @@ input .boton {
   #formulario .contacto2 {
     display: block;
     width: 80vh;
+  }
+}
+
+@media (max-width: 1280px){
+
+  #grillaconocimientos{
+    height: 900px;
   }
 }
