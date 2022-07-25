@@ -63,6 +63,7 @@ header .menu button:hover {
   display: flex;
   justify-content: center;
   height: 600px;
+ 
 }
 
 #hero .hola h1 {
@@ -70,6 +71,7 @@ header .menu button:hover {
   margin-top: 100px;
   width: 700px;
   text-align: center;
+  word-spacing: 3px;
 }
 
 #hero .hola span {
@@ -515,6 +517,19 @@ input .boton {
 
 /*fin footer*/
 
+@media (max-width: 375px){
+  body{
+    width: 100%
+  }
+
+  header .menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+}
+
 @media (max-width: 480px) {
   body {
     width: 100%;
@@ -522,7 +537,7 @@ input .boton {
 
   header {
     width: 100%;
-    padding: 20px 3px;
+    padding: 20px 7px;
     position: fixed;
     top: 0;
   }
@@ -631,28 +646,20 @@ input .boton {
   #hero {
     display: flex;
     flex-direction: column;
-    height: 1000px;
-    width: 90%;
+    height: 900px;
+    width: 100%;
     margin-top: 10px;
     align-items: center;
-    padding: 20px;
   }
 
   #hero .textodescripcion {
-    width: 70%;
     margin: 0 auto;
+    word-spacing: 3px;
   }
 
   #hero .textodescripcion .hola {
     display: flex;
     margin-bottom: 20px;
-  }
-
-  #hero .fotopersonal img {
-    display: flex;
-    height: 380px;
-    width: 370px;
-    margin: 0 auto;
   }
 
   #grillaconocimientos {
@@ -664,11 +671,6 @@ input .boton {
 
   #grillaconocimientos .conocimientos p {
     width: 35vh;
-  }
-
-  #grillaconocimientos .grilla {
-    width: 50vh;
-    height: 400px;
   }
 
   #grillaconocimientos .grilla .html,
@@ -697,9 +699,8 @@ input .boton {
 
   #contacto {
     width: 100%;
-    height: 600px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 50px;
   }
 
   #contacto .contactame {
