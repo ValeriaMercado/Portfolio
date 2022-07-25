@@ -495,7 +495,7 @@ input .boton {
   margin: 0px 10px;
   width: 50px;
   border: 1px solid rgb(255, 255, 255);
-  border-radius: 50%;
+  border-radius: 60%;
   align-items: center;
   text-align: center;
 }
@@ -630,6 +630,10 @@ input .boton {
   #footer {
     padding: 30px 10px;
   }
+
+  #footer .redessociales i {
+    color: lightblue;
+    font-size: 30px;
 }
 
 @media (min-width: 481px) and (max-width: 960px) {
