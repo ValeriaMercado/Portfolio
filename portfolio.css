@@ -485,24 +485,23 @@ input .boton {
 
 #footer .redessociales {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
 #footer .redessociales a {
   background-color: white;
-  font-size: 30px;
+  font-size: 40px;
   margin: 0px 10px;
-  width: 50px;
+  width: 60px;
   border: 1px solid rgb(255, 255, 255);
-  border-radius: 100%;
-  align-items: center;
+  border-radius: 50%;
   text-align: center;
 }
 
 #footer .redessociales i {
   color: lightblue;
-  font-size: 25px;
+  font-size: 30px;
+  margin:10px;
 }
 
 #footer a:hover {
